@@ -19,18 +19,26 @@ deleteButtons.forEach((deleteButton) => {
 function addToDo()
 {
     console.log(inputElement.value);
-    let taskDiv = document.createElement("div");
-    taskDiv.setAttribute("class", "task")
-    let taskH4 = document.createElement("h4");
-    taskH4.innerHTML = inputElement.value;
-    let taskDeleteButton = document.createElement("button");
-    taskDeleteButton.innerHTML = "delete";
-    taskDeleteButton.setAttribute("class", "deleteButton")
-    taskDiv.appendChild(taskH4);
-    taskDiv.appendChild(taskDeleteButton);
-    let todoListDiv = document.querySelector(".taskList");
-    todoListDiv.appendChild(taskDiv);
-    taskDeleteButton.addEventListener("click", () => {deleteToDo(taskDeleteButton)});
+    if(inputElement.value == "")
+    {
+        console.log("empty input");
+    }
+    else
+    {
+        let taskDiv = document.createElement("div");
+        taskDiv.setAttribute("class", "task")
+        let taskH4 = document.createElement("h4");
+        taskH4.innerHTML = inputElement.value;
+        let taskDeleteButton = document.createElement("button");
+        taskDeleteButton.innerHTML = "delete";
+        taskDeleteButton.setAttribute("class", "deleteButton")
+        taskDiv.appendChild(taskH4);
+        taskDiv.appendChild(taskDeleteButton);
+        let todoListDiv = document.querySelector(".taskList");
+        todoListDiv.appendChild(taskDiv);
+        taskDeleteButton.addEventListener("click", () => {deleteToDo(taskDeleteButton)});
+    }
+    
 }
 
 // function deleteToDo(i)
