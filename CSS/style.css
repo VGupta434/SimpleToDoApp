@@ -49,6 +49,7 @@ body
     background-color: #FFF9D0;
     margin: 10px;
     overflow: hidden;
+    border-radius: 2em;
 }
 
 .task
