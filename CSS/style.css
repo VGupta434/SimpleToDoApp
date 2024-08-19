@@ -1,0 +1,86 @@
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EBF4F6;
+}
+.mainHeading
+{
+    margin: 20px 0px;
+    color: #071952;
+}
+.addTextArea
+{
+    width: 70vw;
+    height: 3em;
+    border-radius: 1em;
+    border-color: #37B7C3;
+    margin: 20px 0px;
+    padding: 0em 2em;
+}
+.addButon
+{
+    width: 20em;
+    height: 3em;
+    color: #071952;
+    background-color: #37B7C3;
+    border: none;
+    border-radius: 1em;
+}
+.addButon:hover
+{
+    background-color: #088395;
+}
+.taskList
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: fit-content;
+    min-height: 70vh;
+    background-color: #FFF9D0;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.task
+{
+    display: flex;
+    min-width: 95%;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: 10px;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+
+}
+
+.task h4
+{
+    color: #071952;
+    /* flex-basis: 0; */
+    /* min-width: 0; */
+    margin: 10px;
+}
+.deleteButton
+{
+    background-color: #CAF4FF;
+    color: #0775d5; 
+    border: none;
+    padding: 5px;
+    border-radius: 1em;
+}
+
+.deleteButton:hover
+{
+    background-color: #A0DEFF;
+}
