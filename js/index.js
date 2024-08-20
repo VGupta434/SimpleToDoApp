@@ -22,6 +22,7 @@ function addToDo()
     if(inputElement.value == "")
     {
         console.log("empty input");
+        alert("Empty task cannot be added, please add some text before adding the task.")
     }
     else
     {
